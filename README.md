@@ -31,6 +31,7 @@ A **TypeScript** type definitions package for iterables.
 - [Related packages](#related-packages)
 - [Installation](#installation)
 - [Api](#api)
+  - [`AnyIterable`](#anyiterable)
   - [`AnyIterableElement`](#anyiterableelement)
   - [`AsyncIterableElement`](#asynciterableelement)
   - [`IterValue`](#itervalue)
@@ -64,12 +65,23 @@ npm install @typedly/iterable --save-peer
 
 ```typescript
 import {
+  AnyIterable,
   AnyIterableElement,
   AsyncIterableElement,
   IterValue,
   IterableElement,
 } from '@typedly/iterable';
 ```
+
+### `AnyIterable`
+
+Represents any iterable collection, either synchronous or asynchronous.
+
+```typescript
+import { AnyIterable } from '@typedly/iterable';
+```
+
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable.type.ts)
 
 ### `AnyIterableElement`
 
