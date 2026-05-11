@@ -34,7 +34,7 @@ A **TypeScript** type definitions package for iterables.
   - [`AnyIterableElement`](#anyiterableelement)
   - [`AsyncIterableElement`](#asynciterableelement)
   - [`IterValue`](#itervalue)
-  - [`IterableElement`](#itervalue)
+  - [`IterableElement`](#iterableelement)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -79,7 +79,7 @@ The element type of an iterable or async iterable.
 import { AnyIterableElement } from '@typedly/iterable';
 ```
 
-[Source](https://github.com/typedly/iterable/blob/main/src/iterable/lib/any-iterable-element.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable-element.type.ts)
 
 ### `AsyncIterableElement`
 
@@ -89,17 +89,27 @@ The async iterate element type.
 import { AsyncIterableElement } from '@typedly/iterable';
 ```
 
-[Source](https://github.com/typedly/iterable/blob/main/src/iterable/lib/async-iterable-element.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/async-iterable-element.type.ts)
+
+### `IterableElement`
+
+The iterated value type.
+
+```typescript
+import { IterableElement } from '@typedly/iterable';
+```
+
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iterable-element.type.ts)
 
 ### `IterValue`
 
-The iterated value type.
+The element type of an iterable.
 
 ```typescript
 import { IterValue } from '@typedly/iterable';
 ```
 
-[Source](http://github.com/typedly/iterable/blob/main/src/iterable/lib/iter-value.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iter-value.type.ts)
 
 ## Contributing
 
