@@ -99,7 +99,7 @@ The iterated value type.
 import { IterableElement } from '@typedly/iterable';
 ```
 
-[Source](htthttps://github.com/typedly/iterable/blob/main/src/lib/iterable-element.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iterable-element.type.ts)
 
 ### `IterValue`
 
@@ -109,7 +109,7 @@ The element type of an iterable.
 import { IterValue } from '@typedly/iterable';
 ```
 
-[Source](htthttps://github.com/typedly/iterable/blob/main/src/lib/iter-value.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iter-value.type.ts)
 
 ## Contributing
 
