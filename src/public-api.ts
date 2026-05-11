@@ -3,6 +3,7 @@
  */
 
 export type {
+  AnyIterable,
   AnyIterableElement,
   AsyncIterableElement,
   IterValue,
