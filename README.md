@@ -31,10 +31,12 @@ A **TypeScript** type definitions package for iterables.
 - [Related packages](#related-packages)
 - [Installation](#installation)
 - [Api](#api)
-  - [`AnyIterable`](#anyiterable)
+  - [`AnyIterableConstructor`](#anyiterableconstructor)
   - [`AnyIterableElement`](#anyiterableelement)
+  - [`AnyIterable`](#anyiterable)
   - [`AsyncIterableElement`](#asynciterableelement)
   - [`IterValue`](#itervalue)
+  - [`IterableConstructor`](#iterableconstructor)
   - [`IterableElement`](#iterableelement)
 - [Contributing](#contributing)
 - [Support](#support)
@@ -66,22 +68,24 @@ npm install @typedly/iterable --save-peer
 ```typescript
 import {
   AnyIterable,
+  AnyIterableConstructor,
   AnyIterableElement,
   AsyncIterableElement,
   IterValue,
+  IterableConstructor,
   IterableElement,
 } from '@typedly/iterable';
 ```
 
-### `AnyIterable`
+### `AnyIterableConstructor`
 
-Represents any iterable collection, either synchronous or asynchronous.
+Any iterable constructor, defining how to create instances of any iterables, including both synchronous and asynchronous iterables.
 
 ```typescript
-import { AnyIterable } from '@typedly/iterable';
+import { AnyIterableConstructor } from '@typedly/iterable';
 ```
 
-[Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable.type.ts)
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable.constructor.ts)
 
 ### `AnyIterableElement`
 
@@ -93,6 +97,16 @@ import { AnyIterableElement } from '@typedly/iterable';
 
 [Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable-element.type.ts)
 
+### `AnyIterable`
+
+Represents any iterable collection, either synchronous or asynchronous.
+
+```typescript
+import { AnyIterable } from '@typedly/iterable';
+```
+
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/any-iterable.type.ts)
+
 ### `AsyncIterableElement`
 
 The async iterate element type.
@@ -103,16 +117,6 @@ import { AsyncIterableElement } from '@typedly/iterable';
 
 [Source](https://github.com/typedly/iterable/blob/main/src/lib/async-iterable-element.type.ts)
 
-### `IterableElement`
-
-The iterated value type.
-
-```typescript
-import { IterableElement } from '@typedly/iterable';
-```
-
-[Source](https://github.com/typedly/iterable/blob/main/src/lib/iterable-element.type.ts)
-
 ### `IterValue`
 
 The element type of an iterable.
@@ -122,6 +126,26 @@ import { IterValue } from '@typedly/iterable';
 ```
 
 [Source](https://github.com/typedly/iterable/blob/main/src/lib/iter-value.type.ts)
+
+### `IterableConstructor`
+
+Iterable constructor, defining how to create instances of iterables.
+
+```typescript
+import { IterableConstructor } from '@typedly/iterable';
+```
+
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iterable.constructor.ts)
+
+### `IterableElement`
+
+The iterated value type.
+
+```typescript
+import { IterableElement } from '@typedly/iterable';
+```
+
+[Source](https://github.com/typedly/iterable/blob/main/src/lib/iterable-element.type.ts)
 
 ## Contributing
 
