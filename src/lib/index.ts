@@ -1,6 +1,8 @@
 // Iterable.
 export type { AnyIterable } from './any-iterable.type';
+export type { AnyIterableConstructor } from './any-iterable.constructor';
 export type { AnyIterableElement } from './any-iterable-element.type';
 export type { AsyncIterableElement } from './async-iterable-element.type';
 export type { IterValue } from './iter-value.type';
+export type { IterableConstructor } from './iterable.constructor';
 export type { IterableElement } from './iterable-element.type';
